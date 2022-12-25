@@ -11,7 +11,7 @@ IF(CMAKE_SYSTEM_NAME MATCHES "Windows")
 ELSEIF(CMAKE_SYSTEM_NAME MATCHES "Linux")
     add_definitions(-w)
     link_directories(/home/ubuntu/vcpkg/installed/x64-linux/lib)
-    link_libraries(backtrace pthread ssl crypto z uring  sqlite3)
+    link_libraries(backtrace pthread ssl crypto z uring  sqlite3 uSockets)
 ENDIF(CMAKE_SYSTEM_NAME MATCHES "Windows")
 
 include_directories(../inc ../../SM/inc/os ../../SM/configs ../../SM/Utils ../../SM/hotupdate ../../SM/database ../../SM/inc/${CMAKE_SYSTEM_NAME}/export_flags ../../SM/networkinterface ../../SM/inc)

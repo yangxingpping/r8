@@ -23,10 +23,7 @@ int main(int argc, char* argv[])
 			SMNetwork::initNetwork();
 			SMHotupdate::IOContextManager::Init();
 			SMDB::init();
-			thread thhttp([]() {
-				DEFHTTP.startServer();
-				});
-			thhttp.join();
+			DEFHTTP.startServer();
 		}
 	}
 	

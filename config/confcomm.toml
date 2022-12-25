@@ -26,6 +26,8 @@
     rootHtmlPath = "http"
     resRootPath="dist"
     wsPath = "ws"
+    keyName="key.pem"
+    pemName="cert.pem"
 
 [jwt]
     issuer="alqaz"

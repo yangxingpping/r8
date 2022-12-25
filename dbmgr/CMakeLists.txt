@@ -22,7 +22,7 @@ AUX_SOURCE_DIRECTORY(. A)
 
 add_executable(dbmgr ${A} )
 
-target_link_libraries(dbmgr PRIVATE nng::nngpp PRIVATE toml11::toml11 PRIVATE tinyutf8::tinyutf8 PRIVATE unofficial::sqlite3::sqlite3 PRIVATE sqlpp11::sqlpp11 PRIVATE date::date date::date-tz PRIVATE ZLIB::ZLIB PRIVATE $<IF:$<TARGET_EXISTS:uv_a>,uv_a,uv> PUBLIC uSockets2 PRIVATE Utils PRIVATE OpenSSL::SSL PRIVATE OpenSSL::Crypto PRIVATE configs PRIVATE database PRIVATE hotupdate PRIVATE networkinterface PRIVATE Taskflow::Taskflow PRIVATE nng::nng PRIVATE fmt::fmt PRIVATE efsw::efsw)
+target_link_libraries(dbmgr PRIVATE nng::nngpp PRIVATE toml11::toml11 PRIVATE tinyutf8::tinyutf8 PRIVATE unofficial::sqlite3::sqlite3 PRIVATE sqlpp11::sqlpp11 PRIVATE date::date date::date-tz PRIVATE ZLIB::ZLIB PRIVATE $<IF:$<TARGET_EXISTS:uv_a>,uv_a,uv>  PRIVATE Utils PRIVATE OpenSSL::SSL PRIVATE OpenSSL::Crypto PRIVATE configs PRIVATE database PRIVATE hotupdate PRIVATE networkinterface PRIVATE Taskflow::Taskflow PRIVATE nng::nng PRIVATE fmt::fmt PRIVATE efsw::efsw)
 
 
 set_target_properties(dbmgr PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/config")

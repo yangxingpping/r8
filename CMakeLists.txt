@@ -24,7 +24,7 @@ find_package(toml11 CONFIG REQUIRED)
 find_package(asio CONFIG REQUIRED)
 find_package(nngpp CONFIG REQUIRED)
 
-include_directories(inc config ../libsz/inc/os/${CMAKE_SYSTEM_NAME}/export_flags)
+include_directories(../SM ../SM/Configs ../SM/Utils ../SM/inc ../SM/hotupdate ../SM/database ../SM/networkinterface  inc config ../SM/inc/os/${CMAKE_SYSTEM_NAME}/export_flags)
 
 add_definitions(-DUSE_SQLITE -DNOMINMAX -DSPDLOG_COMPILED_LIB)
 

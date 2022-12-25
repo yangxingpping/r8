@@ -5,6 +5,7 @@
 #include "networkinterface.h"
 #include "database.h"
 #include "myenum.h"
+#include "Apps.h"
 #include "Utils.h"
 #include <thread>
 

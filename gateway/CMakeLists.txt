@@ -14,7 +14,7 @@ ELSEIF(CMAKE_SYSTEM_NAME MATCHES "Linux")
     link_libraries(backtrace pthread ssl crypto z uring  sqlite3)
 ENDIF(CMAKE_SYSTEM_NAME MATCHES "Windows")
 
-include_directories(../inc ../../libsz/inc/os ../../libsz/hashlibrary ../../libsz/configs ../../libsz/Utils ../../libsz/hotupdate ../../libsz/database ../../libsz/inc/${CMAKE_SYSTEM_NAME}/export_flags ../../libsz/networkinterface ../../libsz/inc)
+include_directories(../inc ../../SM/inc/os ../../SM/hashlibrary ../../SM/configs ../../SM/Utils ../../SM/hotupdate ../../SM/database ../../SM/inc/${CMAKE_SYSTEM_NAME}/export_flags ../../SM/networkinterface ../../SM/inc)
 
 AUX_SOURCE_DIRECTORY(. A)
 
